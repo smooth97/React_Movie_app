@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  background: #1d1c3b;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App header {
+  width: 100%;
+  height: 200px;
+  color: white;
+  text-align: center;
+  line-height: 150px;
+}
+
+.App header h1 {
+  font-size: 40pt;
+}
+
+.Movie {
+  background: rgba(255, 255, 255, 0.075);
+  width: 450px;
+  height: 230px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Movie h2 {
+  font-size: 18pt;
+  font-weight: 600;
+  color: white;
+}
+
+.Movie .Movie_Colums {
+  width: 30%;
+  text-overflow: ellipsis;
+}
+
+.Movie .Movie_Colums img {
+  width: 120%;
+}
+
+.Movie .Movie_Colums:last-child {
+  padding: 20px 0;
+  width: 60%;
+  text-overflow: ellipsis;
+}
+
+.Movie .Movie_Genres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0 20px;
+  font-size: 9pt;
+  color: rgba(255, 255, 255, 0.521);
+}
+
+.Movie .Movie_Genres .Movie_Genre {
+  margin-right: 10px;
+}
+
+.Movie .Movie_Synopsis {
+  width: 100%;
+  height: 95px;
+  text-overflow: ellipsis;
+  color: rgba(255, 255, 255, 0.466);
+  font-size: 10pt;
+  overflow: hidden;
+}
+/*# sourceMappingURL=movie.css.map */

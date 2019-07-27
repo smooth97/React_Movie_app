@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+$blue-grey: rgb(77,97,132);   
+$dark-blue: rgb(29,28,59);   
+$purple: rgb(128,32,253);   
+$light-grey: rgb(230, 230, 230);
+$dark-grey: rgb(90, 90, 90); 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    background: $dark-blue;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    header {
+        width: 100%;
+        height: 200px;
+        color: white;
+        text-align: center;
+        line-height: 150px;
+        
+        h1 {
+            font-size: 40pt;
+        }
+    }
+}
+
+.Movie {
+    background: rgba(255, 255, 255, 0.075);
+    width: 450px;
+    height: 230px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    overflow: hidden;
+    position: relative;
+
+    h2 {
+        font-size: 18pt;
+        font-weight: 600;
+        color: white;
+    }
+
+    .Movie_Colums {
+        width: 30%;
+        text-overflow: ellipsis;
+
+        img {
+            width: 120%;
+        }
+    }
+
+    .Movie_Colums:last-child {
+        padding: 20px 0;
+        width: 60%;
+        text-overflow: ellipsis;
+    }
+    
+    .Movie_Genres {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0 20px;
+        font-size: 9pt;
+        color: rgba(255, 255, 255, 0.521);
+    }
+
+    .Movie_Genres .Movie_Genre {
+        margin-right: 10px;
+    }
+
+    .Movie_Synopsis {
+        width: 100%;
+        height: 95px;
+        text-overflow: ellipsis;
+        color: rgba(255, 255, 255, 0.466);   
+        font-size: 10pt;
+        overflow: hidden;
+    }
+}
+

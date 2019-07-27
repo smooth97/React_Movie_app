@@ -1,14 +1,14 @@
 import React from 'react';
-import './Movie.css';
+import './styles/movie.css';
 
 const Movie = ({title, image, key, genres, synopsis}) => {
     return (
-        <div className="movie">
+        <div className="Movie">
             <div className="Movie_Colums">
                 <img className="Movie_Poster" src={image} alt={title} title={title}/>
             </div>
             <div className="Movie_Colums">
-                <h1>{title}</h1>
+                <h2>{title}</h2>
                 <div className="Movie_Genres">
                     {genres.map((genre, index) => {
                         return <MovieGenre genre={genre} key={index} />
